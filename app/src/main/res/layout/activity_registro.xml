@@ -1,0 +1,295 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    android:padding="32dp">
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/bienvenida_img_logo"
+        android:src="@drawable/spotify_logo_verde"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/email_layout"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintWidth_percent="0.35" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:boxBackgroundMode="none"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_logo"
+        app:layout_constraintBottom_toTopOf="@id/name_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/edittext"
+            android:hint="@string/registro_txt_correo"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint_gray" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:boxBackgroundMode="none"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email_layout"
+        app:layout_constraintBottom_toTopOf="@id/register_password_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="name"
+            android:background="@drawable/edittext"
+            android:hint="@string/registro_txt_nombre"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint_gray" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_password_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:boxBackgroundMode="none"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/hint_gray"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_layout"
+        app:layout_constraintBottom_toTopOf="@id/register_repeat_password_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="password"
+            android:background="@drawable/edittext"
+            android:hint="@string/registro_txt_password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:paddingEnd="48dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint_gray"
+            tools:ignore="RtlSymmetry" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_repeat_password_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:boxBackgroundMode="none"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/hint_gray"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register_password_layout"
+        app:layout_constraintBottom_toTopOf="@id/birth_label">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_repeat_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="password"
+            android:background="@drawable/edittext"
+            android:hint="@string/registro_txt_pass_repetir"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:paddingEnd="48dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint_gray"
+            tools:ignore="RtlSymmetry" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/birth_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/registro_txt_nacimiento"
+        android:textColor="@color/spotify_green"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register_repeat_password_layout"
+        app:layout_constraintBottom_toTopOf="@id/day_layout" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/day_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        app:boxBackgroundMode="none"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toStartOf="@id/month_layout"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/birth_label"
+        app:layout_constraintBottom_toTopOf="@id/register_gender_group">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="birthDay"
+            android:background="@drawable/edittext"
+            android:hint="@string/registro_txt_dia_nacimiento"
+            android:maxLength="2"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint_gray" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/month_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:boxBackgroundMode="none"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toStartOf="@id/year_layout"
+        app:layout_constraintStart_toEndOf="@id/day_layout"
+        app:layout_constraintTop_toTopOf="@id/day_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_month"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="birthMonth"
+            android:background="@drawable/edittext"
+            android:hint="@string/registro_txt_mes_nacimiento"
+            android:maxLength="2"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint_gray" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/year_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        app:boxBackgroundMode="none"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/month_layout"
+        app:layout_constraintTop_toTopOf="@id/day_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="birthYear"
+            android:background="@drawable/edittext"
+            android:hint="@string/registro_txt_anio_nacimiento"
+            android:maxLength="4"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint_gray" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/register_gender_group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/day_layout"
+        app:layout_constraintBottom_toTopOf="@id/register_button">
+
+        <RadioButton
+            android:id="@+id/register_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/spotify_green"
+            android:minHeight="48dp"
+            android:text="@string/registro_boton_genero_masc"
+            android:textColor="@color/spotify_green" />
+
+        <RadioButton
+            android:id="@+id/register_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:buttonTint="@color/spotify_green"
+            android:minHeight="48dp"
+            android:text="@string/registro_boton_genero_fem"
+            android:textColor="@color/spotify_green" />
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/register_button"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/spotify_green"
+        android:minHeight="48dp"
+        android:text="@string/registro_boton_registrarse"
+        android:textColor="@color/white"
+        app:cornerRadius="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register_gender_group"
+        app:layout_constraintBottom_toTopOf="@id/register_to_login" />
+
+    <TextView
+        android:id="@+id/register_to_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="@string/registro_txt_logeate"
+        android:textColor="@color/spotify_green"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register_button"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

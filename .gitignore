@@ -1,0 +1,45 @@
+# Gradle
+.gradle/
+build/
+**/build/
+
+# Local Android SDK configuration and secrets
+local.properties
+*.jks
+*.keystore
+*.p12
+*.key
+*.pem
+*.env
+*.env.*
+!.env.example
+
+# Android Studio and IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Android build and tooling output
+captures/
+.externalNativeBuild/
+.cxx/
+lint-results-*.html
+lint-results-*.xml
+mapping/
+*.apk
+*.aab
+*.ap_
+
+# Generated and machine-specific files
+*.log
+*.hprof
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Firebase / Google service account credentials
+app/google-services.json
+*-service-account.json
+service-account-*.json

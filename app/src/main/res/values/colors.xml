@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="custom_indicator_color">#1DB954</color>
+    <color name="fondo_tarjetas_home">#313131</color>
+    <color name="fondo_menu_inferior">#2d2d2d</color>
+    <color name="subtexto_tarjetas_parati">#6e6e6e</color>
+    <color name="spotify_green">#1DB954</color>
+    <color name="spotify_dark">#191414</color>
+    <color name="spotify_card">#23272F</color>
+    <color name="background_dark">#111111</color>
+    <color name="hint_gray">#888888</color>
+    <color name="text_gray">#B3B3B3</color>
+    <color name="input_bg">#212121</color>
+</resources>

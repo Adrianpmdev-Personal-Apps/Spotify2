@@ -1,0 +1,110 @@
+<!-- app/src/main/res/layout/activity_reproductor.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/spotify_dark"
+    android:paddingHorizontal="32dp"
+    android:paddingVertical="16dp">
+
+    <!-- Botón de atrás -->
+    <ImageButton
+        android:id="@+id/player_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="1dp"/>
+
+    <!-- Flecha izquierda -->
+    <ImageView
+        android:id="@+id/chevron_left"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@android:drawable/ic_media_previous"
+        app:tint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/viewPager_canciones"
+        app:layout_constraintBottom_toBottomOf="@id/viewPager_canciones"
+        android:layout_marginStart="8dp"/>
+
+    <!-- Flecha derecha -->
+    <ImageView
+        android:id="@+id/chevron_right"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@android:drawable/ic_media_next"
+        app:tint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/viewPager_canciones"
+        app:layout_constraintBottom_toBottomOf="@id/viewPager_canciones"
+        android:layout_marginEnd="8dp"/>
+
+    <!-- ViewPager2 para swipe de canciones -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager_canciones"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        app:layout_constraintTop_toBottomOf="@id/player_back"
+        app:layout_constraintBottom_toTopOf="@id/player_seekbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="22dp" />
+
+    <!-- SEEK & CONTROLES -->
+    <SeekBar
+        android:id="@+id/player_seekbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:max="100"
+        android:progress="0"
+        android:progressTint="@color/spotify_green"
+        android:thumbTint="@color/spotify_green"
+        app:layout_constraintBottom_toTopOf="@id/player_current_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewPager_canciones" />
+
+    <TextView
+        android:id="@+id/player_current_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/inicio_cancion"
+        android:textColor="@color/text_gray"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@id/player_play_pause"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player_seekbar" />
+
+    <TextView
+        android:id="@+id/player_total_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_gray"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/player_current_time" />
+
+    <ImageButton
+        android:id="@+id/player_play_pause"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/descripcion_imagen_reproductor"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player_current_time"
+        app:layout_constraintWidth_percent="0.22" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

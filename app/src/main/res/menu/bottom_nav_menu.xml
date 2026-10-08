@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:enabled="true"
+        android:checked="true"
+        android:icon="@drawable/ic_home"
+        android:title="@string/boton_nav_inf_inicio" />
+
+    <item
+        android:id="@+id/nav_library"
+        android:enabled="true"
+        android:icon="@drawable/ic_library"
+        android:title="@string/boton_nav_inf_library" />
+
+    <item
+        android:id="@+id/nav_camera"
+        android:enabled="true"
+        android:icon="@drawable/ic_camera"
+        android:title="@string/boton_nav_inf_camera" />
+
+    <item
+        android:id="@+id/nav_user"
+        android:enabled="true"
+        android:icon="@drawable/ic_user"
+        android:title="@string/boton_nav_inf_perfil" />
+</menu>
