@@ -323,9 +323,7 @@ The project covers topics such as:
 
 ## 👤 Credits
 
-Developed by **Adrián Pérez Morales**.
-
-🎓 Educational project developed during the **2nd year of DAM — 2025**.
+Developed by [@adrianpmdev](https://github.com/adrianpmdev).
 
 ---
 
