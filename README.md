@@ -6,17 +6,19 @@
 
 **Developed as part of the 2nd year of the DAM program in 2025**
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge\&logo=openjdk\&logoColor=white)
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge\&logo=android\&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge\&logo=firebase\&logoColor=black)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge\&logo=supabase\&logoColor=white)
-![Deezer API](https://img.shields.io/badge/Deezer_API-FEAA2D?style=for-the-badge\&logo=deezer\&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![Deezer API](https://img.shields.io/badge/Deezer_API-FEAA2D?style=for-the-badge&logo=deezer&logoColor=white)
 
-[![Maintainer](https://img.shields.io/badge/Maintainer-adrianpmdev-181717?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/adrianpmdev)
+[![Author](https://img.shields.io/badge/Author-adrianpmdev-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/adrianpmdev)
 
 </div>
 
 ---
+
+<br>
 
 ## 👋 About
 
@@ -31,6 +33,10 @@ The project integrates several technologies and external services into a single 
 > 🎵 Deezer API
 
 > 📦 This project was created for educational purposes as part of the DAM program.
+
+---
+
+<br>
 
 ## ✨ Features
 
@@ -48,21 +54,25 @@ The project integrates several technologies and external services into a single 
 
 ---
 
+<br>
+
 ## 🛠️ Tech Stack
 
 | Area                      | Technologies                                                                                                                                                                                                                                       |
 | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 📱 **Platform**           | ![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square\&logo=android\&logoColor=white)                                                                                                                                           |
-| 💻 **Language**           | ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square\&logo=openjdk\&logoColor=white)                                                                                                                                                 |
-| 🔥 **Backend / Services** | ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square\&logo=firebase\&logoColor=black) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square\&logo=supabase\&logoColor=white)                            |
-| 🎵 **Music API**          | ![Deezer API](https://img.shields.io/badge/Deezer_API-FEAA2D?style=flat-square\&logo=deezer\&logoColor=white)                                                                                                                                      |
-| 🌐 **Networking**         | ![Retrofit](https://img.shields.io/badge/Retrofit-48B983?style=flat-square\&logo=android\&logoColor=white) ![Gson](https://img.shields.io/badge/Gson-4285F4?style=flat-square\&logo=google\&logoColor=white)                                       |
-| 🖼️ **Image Loading**     | ![Glide](https://img.shields.io/badge/Glide-8BC34A?style=flat-square\&logo=google\&logoColor=white)                                                                                                                                                |
-| 🎨 **UI**                 | ![Material Components](https://img.shields.io/badge/Material_Components-757575?style=flat-square\&logo=materialdesign\&logoColor=white) ![AndroidX](https://img.shields.io/badge/AndroidX-3DDC84?style=flat-square\&logo=android\&logoColor=white) |
+| 📱 **Platform**           | ![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white)                                                                                                                                           |
+| 💻 **Language**           | ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)                                                                                                                                                 |
+| 🔥 **Backend / Services** | ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)                            |
+| 🎵 **Music API**          | ![Deezer API](https://img.shields.io/badge/Deezer_API-FEAA2D?style=flat-square&logo=deezer&logoColor=white)                                                                                                                                      |
+| 🌐 **Networking**         | ![Retrofit](https://img.shields.io/badge/Retrofit-48B983?style=flat-square&logo=android&logoColor=white) ![Gson](https://img.shields.io/badge/Gson-4285F4?style=flat-square&logo=google&logoColor=white)                                       |
+| 🖼️ **Image Loading**     | ![Glide](https://img.shields.io/badge/Glide-8BC34A?style=flat-square&logo=google&logoColor=white)                                                                                                                                                |
+| 🎨 **UI**                 | ![Material Components](https://img.shields.io/badge/Material_Components-757575?style=flat-square&logo=materialdesign&logoColor=white) ![AndroidX](https://img.shields.io/badge/AndroidX-3DDC84?style=flat-square&logo=android&logoColor=white) |
 | 🔗 **View Binding**       | ViewBinding                                                                                                                                                                                                                                        |
 | 💾 **Local Storage**      | SharedPreferences                                                                                                                                                                                                                                  |
 
 ---
+
+<br>
 
 ## 🏗️ Architecture & Project Structure
 
@@ -84,6 +94,8 @@ The application follows a package-based structure that separates activities, fra
 | `utils`            | General-purpose utilities such as image loading, password hashing and timestamp generation through `SpotifyUtils`.                                            |
 
 ---
+
+<br>
 
 ## 🧭 Navigation Flow
 
@@ -131,6 +143,8 @@ Dedicated music player activity launched from the Library when a song is selecte
 
 ---
 
+<br>
+
 ## 🖼️ UI Components
 
 ### 📋 RecyclerView
@@ -171,6 +185,8 @@ When the user changes the current page:
 
 ---
 
+<br>
+
 ## 🗄️ Data & Services
 
 ### 🔥 Firebase Firestore
@@ -209,6 +225,8 @@ Access to stored files is handled through **signed URLs**, which expire after **
 
 ---
 
+<br>
+
 ## 🔐 Authentication & Session Management
 
 ### 📝 Registration
@@ -230,6 +248,8 @@ The authenticated user's email is stored locally using `SharedPreferencesService
 This allows the application to restore the user's session when it starts.
 
 ---
+
+<br>
 
 ## ⚙️ Configuration & Setup
 
@@ -260,6 +280,8 @@ The application requires permissions for:
 These permissions are declared in `AndroidManifest.xml`.
 
 ---
+
+<br>
 
 ## 📁 Project Structure
 
@@ -298,6 +320,8 @@ Spotify2/
 
 ---
 
+<br>
+
 ## 🎓 Educational Purpose
 
 This project was developed as part of the **2nd year of the DAM program in 2025**.
@@ -321,14 +345,26 @@ The project covers topics such as:
 
 ---
 
-## 👤 Credits
+<br>
 
-Developed by [@adrianpmdev](https://github.com/adrianpmdev).
+## 📄 License
+
+Source code licensed under the **MIT License**. Spotify branding, Deezer catalog data and any music files are excluded. See [LICENSE](LICENSE) for details.
 
 ---
 
+<br>
+
+## 👤 Author
+
+[@adrianpmdev](https://github.com/adrianpmdev) · Junior Full Stack Developer
+
+---
+
+<br>
+
 <div align="center">
 
-✨ Built as an educational project, one feature at a time ✨
+✨ Made in **2025** by [@adrianpmdev](https://github.com/adrianpmdev) ✨
 
 </div>
